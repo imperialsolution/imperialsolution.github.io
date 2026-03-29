@@ -1,1 +1,2629 @@
 
+<!DOCTYPE html>
+<html lang="en-KE">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imperial Solutions Digital | Web Design Nairobi Kenya | SEO Agency</title>
+  <meta name="description" content="Imperial Solutions Digital — Nairobi's premier web design and digital marketing agency. Custom websites from KSh 15,000, SEO, e-commerce & social media. Serving Kenya since 2014. Call +254 723 923518.">
+  <meta name="keywords" content="web design Nairobi, digital marketing Kenya, SEO Kenya, website design Nairobi, e-commerce Kenya, social media marketing Nairobi">
+  <meta name="author" content="Imperial Solutions Digital">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Imperial Solutions Digital | Web Design & Digital Marketing Nairobi">
+  <meta property="og:description" content="Transform your business with custom websites, SEO & social media strategies in Kenya.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://imperialsolution.github.io/">
+  <link rel="canonical" href="https://imperialsolution.github.io/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "Imperial Solutions Digital",
+        "url": "https://imperialsolution.github.io/",
+        "logo": "https://imperialsolution.github.io/logo.png",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+254-723-923518",
+          "contactType": "customer service",
+          "areaServed": "KE",
+          "availableLanguage": ["English", "Swahili"]
+        },
+        "sameAs": ["https://web.facebook.com/imperialsolution.net"]
+      },
+      {
+        "@type": "LocalBusiness",
+        "name": "Imperial Solutions Digital",
+        "image": "https://imperialsolution.github.io/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Westlands",
+          "addressLocality": "Nairobi",
+          "addressRegion": "Nairobi County",
+          "addressCountry": "KE"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -1.2676,
+          "longitude": 36.8108
+        },
+        "url": "https://imperialsolution.github.io/",
+        "telephone": "+254723923518",
+        "priceRange": "KSh 15,000+",
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does web design cost in Nairobi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our web design packages start from KSh 15,000 for a professional corporate website. E-commerce sites with M-Pesa integration start from KSh 35,000. Contact us for a free quote."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer SEO services in Kenya?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! We offer local SEO optimization specifically for Kenyan businesses, helping you rank on Google for searches in Nairobi and across Kenya. Our SEO clients typically see 200%+ traffic growth."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you integrate M-Pesa into my website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. We specialize in M-Pesa Daraja API integration for e-commerce and service websites, enabling seamless mobile money payments for your Kenyan customers."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ============================================
+       CSS CUSTOM PROPERTIES & RESET
+    ============================================ */
+    :root {
+      --navy:   #1E3A8A;
+      --navy-d: #152c6b;
+      --navy-l: #2d4fa0;
+      --gold:   #F59E0B;
+      --gold-d: #d97706;
+      --green:  #10B981;
+      --green-d:#059669;
+      --white:  #F8FAFC;
+      --gray-50:#f1f5f9;
+      --gray-100:#e2e8f0;
+      --gray-300:#cbd5e1;
+      --gray-500:#64748b;
+      --gray-700:#334155;
+      --gray-900:#0f172a;
+      --text:   #1e293b;
+      --radius: 12px;
+      --radius-lg: 20px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+      --shadow: 0 4px 16px rgba(30,58,138,.12);
+      --shadow-lg: 0 10px 40px rgba(30,58,138,.18);
+      --shadow-xl: 0 20px 60px rgba(30,58,138,.22);
+      --transition: .25s cubic-bezier(.4,0,.2,1);
+      --font-body: 'Nunito', sans-serif;
+      --font-display: 'Playfair Display', serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --white: #0f172a;
+        --gray-50:#1e293b;
+        --gray-100:#334155;
+        --gray-300:#475569;
+        --gray-500:#94a3b8;
+        --gray-700:#cbd5e1;
+        --gray-900:#f8fafc;
+        --text: #e2e8f0;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: var(--font-body);
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+    ul { list-style: none; }
+
+    /* ============================================
+       UTILITY
+    ============================================ */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+    .section {
+      padding: 5rem 0;
+    }
+    .section-label {
+      display: inline-block;
+      font-size: .75rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      background: rgba(245,158,11,.1);
+      padding: .35rem .9rem;
+      border-radius: 100px;
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 4vw, 2.75rem);
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1.2;
+      margin-bottom: .75rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      .section-title { color: #93c5fd; }
+    }
+    .section-sub {
+      font-size: 1.0625rem;
+      color: var(--gray-500);
+      max-width: 560px;
+      margin-bottom: 2.5rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .8rem 1.75rem;
+      border-radius: 100px;
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: .9375rem;
+      cursor: pointer;
+      border: 2.5px solid transparent;
+      transition: all var(--transition);
+      white-space: nowrap;
+      text-decoration: none;
+    }
+    .btn-gold {
+      background: var(--gold);
+      color: #fff;
+      border-color: var(--gold);
+    }
+    .btn-gold:hover {
+      background: var(--gold-d);
+      border-color: var(--gold-d);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(245,158,11,.4);
+    }
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border-color: rgba(255,255,255,.7);
+    }
+    .btn-outline:hover {
+      background: rgba(255,255,255,.15);
+      border-color: #fff;
+      transform: translateY(-2px);
+    }
+    .btn-navy {
+      background: var(--navy);
+      color: #fff;
+      border-color: var(--navy);
+    }
+    .btn-navy:hover {
+      background: var(--navy-d);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+
+    /* ============================================
+       SKIP LINK
+    ============================================ */
+    .skip-link {
+      position: absolute;
+      top: -100%;
+      left: 1rem;
+      background: var(--navy);
+      color: #fff;
+      padding: .5rem 1rem;
+      border-radius: var(--radius);
+      z-index: 9999;
+      font-weight: 700;
+    }
+    .skip-link:focus { top: 1rem; }
+
+    /* ============================================
+       NAVIGATION
+    ============================================ */
+    .nav-wrapper {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(30,58,138,.96);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+      gap: 1rem;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      gap: .65rem;
+      flex-shrink: 0;
+    }
+    .nav-logo-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, var(--gold) 0%, #f97316 100%);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .nav-logo-icon svg { width: 22px; height: 22px; fill: #fff; }
+    .nav-logo-text { line-height: 1.15; }
+    .nav-logo-name {
+      font-family: var(--font-display);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .nav-logo-tag {
+      font-size: .65rem;
+      font-weight: 600;
+      letter-spacing: .06em;
+      color: var(--gold);
+      text-transform: uppercase;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: .25rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,.82);
+      font-weight: 600;
+      font-size: .875rem;
+      padding: .4rem .75rem;
+      border-radius: 8px;
+      transition: all var(--transition);
+    }
+    .nav-links a:hover {
+      color: #fff;
+      background: rgba(255,255,255,.12);
+    }
+    .nav-cta {
+      background: var(--gold);
+      color: #fff !important;
+      padding: .45rem 1.1rem !important;
+      border-radius: 100px !important;
+    }
+    .nav-cta:hover {
+      background: var(--gold-d) !important;
+      background-color: var(--gold-d) !important;
+    }
+    /* Mobile nav toggle */
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: .5rem;
+      border-radius: 8px;
+      transition: background var(--transition);
+    }
+    .nav-toggle:hover { background: rgba(255,255,255,.1); }
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: #fff;
+      border-radius: 2px;
+      transition: all var(--transition);
+    }
+    /* CSS-only mobile nav via checkbox hack */
+    #nav-check { display: none; }
+    @media (max-width: 767px) {
+      .nav-toggle { display: flex; }
+      .nav-links {
+        position: fixed;
+        top: 68px; left: 0; right: 0;
+        background: var(--navy-d);
+        flex-direction: column;
+        align-items: stretch;
+        padding: 1rem;
+        gap: .25rem;
+        transform: translateY(-110%);
+        opacity: 0;
+        transition: all var(--transition);
+        pointer-events: none;
+        border-bottom: 3px solid var(--gold);
+      }
+      #nav-check:checked ~ .nav-links {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: all;
+      }
+      #nav-check:checked ~ .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+      #nav-check:checked ~ .nav-toggle span:nth-child(2) { opacity: 0; }
+      #nav-check:checked ~ .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+      .nav-links a { padding: .75rem 1rem; border-radius: 10px; font-size: 1rem; }
+    }
+
+    /* ============================================
+       HERO
+    ============================================ */
+    .hero {
+      min-height: 100svh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      padding-top: 68px;
+      background: linear-gradient(135deg, #0d2259 0%, #1E3A8A 45%, #1d4ed8 100%);
+    }
+    /* Nairobi skyline SVG background */
+    .hero-skyline {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 260px;
+      opacity: .12;
+    }
+    /* Animated mesh circles */
+    .hero-mesh {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      pointer-events: none;
+    }
+    .hero-mesh::before {
+      content: '';
+      position: absolute;
+      width: 600px; height: 600px;
+      top: -200px; right: -200px;
+      background: radial-gradient(circle, rgba(245,158,11,.25) 0%, transparent 70%);
+      border-radius: 50%;
+      animation: pulse-slow 8s ease-in-out infinite alternate;
+    }
+    .hero-mesh::after {
+      content: '';
+      position: absolute;
+      width: 400px; height: 400px;
+      bottom: -100px; left: -100px;
+      background: radial-gradient(circle, rgba(16,185,129,.2) 0%, transparent 70%);
+      border-radius: 50%;
+      animation: pulse-slow 6s ease-in-out infinite alternate-reverse;
+    }
+    @keyframes pulse-slow {
+      0%   { transform: scale(1) translate(0,0); }
+      100% { transform: scale(1.15) translate(20px,-20px); }
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      padding: 3rem 0;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    @media (max-width: 900px) {
+      .hero-grid { grid-template-columns: 1fr; }
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      background: rgba(16,185,129,.15);
+      border: 1px solid rgba(16,185,129,.4);
+      color: #6ee7b7;
+      padding: .35rem .9rem;
+      border-radius: 100px;
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      animation: fadeInDown .6s ease both;
+    }
+    .hero-badge-dot {
+      width: 7px; height: 7px;
+      background: var(--green);
+      border-radius: 50%;
+      animation: blink 1.5s ease-in-out infinite;
+    }
+    @keyframes blink {
+      0%,100% { opacity: 1; }
+      50% { opacity: .3; }
+    }
+    .hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.12;
+      margin-bottom: 1.25rem;
+      animation: fadeInUp .7s .1s ease both;
+    }
+    .hero h1 em {
+      font-style: normal;
+      color: var(--gold);
+    }
+    .hero-subtitle {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: rgba(255,255,255,.82);
+      margin-bottom: 2rem;
+      max-width: 520px;
+      animation: fadeInUp .7s .2s ease both;
+    }
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .875rem;
+      margin-bottom: 2.5rem;
+      animation: fadeInUp .7s .3s ease both;
+    }
+    .hero-trust {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      animation: fadeInUp .7s .4s ease both;
+    }
+    .hero-trust-label {
+      font-size: .75rem;
+      font-weight: 700;
+      color: rgba(255,255,255,.5);
+      text-transform: uppercase;
+      letter-spacing: .1em;
+    }
+    .trust-badges {
+      display: flex;
+      gap: .6rem;
+      flex-wrap: wrap;
+    }
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 8px;
+      padding: .4rem .75rem;
+      font-size: .78rem;
+      font-weight: 700;
+      color: rgba(255,255,255,.9);
+    }
+    .trust-badge svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+    /* Hero visual (right side) */
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeInRight .8s .2s ease both;
+    }
+    @media (max-width: 900px) {
+      .hero-visual { display: none; }
+    }
+    .hero-card-stack {
+      position: relative;
+      width: 340px;
+      height: 380px;
+    }
+    .hero-card {
+      position: absolute;
+      background: rgba(255,255,255,.07);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      color: #fff;
+    }
+    .hero-card-main {
+      width: 300px;
+      top: 40px; left: 20px;
+      z-index: 2;
+    }
+    .hero-card-back {
+      width: 280px;
+      top: 10px; left: 40px;
+      background: rgba(245,158,11,.12);
+      border-color: rgba(245,158,11,.25);
+      z-index: 1;
+    }
+    .hc-icon {
+      width: 44px; height: 44px;
+      background: linear-gradient(135deg, var(--gold), #f97316);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1rem;
+    }
+    .hc-icon svg { width: 22px; height: 22px; fill: #fff; }
+    .hc-title { font-weight: 700; font-size: 1.05rem; margin-bottom: .25rem; }
+    .hc-sub { font-size: .8rem; color: rgba(255,255,255,.65); margin-bottom: 1rem; }
+    .hc-stats {
+      display: flex; gap: 1rem;
+    }
+    .hc-stat { text-align: center; }
+    .hc-stat-num { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; color: var(--gold); }
+    .hc-stat-lbl { font-size: .7rem; color: rgba(255,255,255,.6); }
+    .hero-float-badge {
+      position: absolute;
+      bottom: 20px; right: -20px;
+      background: var(--green);
+      color: #fff;
+      border-radius: 14px;
+      padding: .75rem 1rem;
+      font-size: .78rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      box-shadow: 0 8px 24px rgba(16,185,129,.4);
+      animation: float 3s ease-in-out infinite;
+      z-index: 3;
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(30px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Scroll indicator */
+    .scroll-down {
+      position: absolute;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .5rem;
+      color: rgba(255,255,255,.5);
+      font-size: .72rem;
+      font-weight: 600;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      animation: fadeInUp 1s .8s ease both;
+    }
+    .scroll-arrow {
+      width: 28px; height: 28px;
+      border: 2px solid rgba(255,255,255,.3);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      animation: bounce 2s ease-in-out infinite;
+    }
+    .scroll-arrow svg { width: 12px; height: 12px; fill: rgba(255,255,255,.5); }
+    @keyframes bounce {
+      0%,100% { transform: translateY(0); }
+      50% { transform: translateY(6px); }
+    }
+
+    /* ============================================
+       STATS BAR
+    ============================================ */
+    .stats-bar {
+      background: var(--navy);
+      padding: 2rem 0;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      text-align: center;
+    }
+    @media (max-width: 640px) {
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    .stat-item {}
+    .stat-num {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 900;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: .25rem;
+    }
+    .stat-label {
+      font-size: .8125rem;
+      font-weight: 600;
+      color: rgba(255,255,255,.7);
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+
+    /* ============================================
+       SERVICES
+    ============================================ */
+    .services {
+      background: var(--gray-50);
+    }
+    @media (prefers-color-scheme: dark) {
+      .services { background: #0f172a; }
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 1023px) {
+      .services-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 499px) {
+      .services-grid { grid-template-columns: 1fr; }
+    }
+    .service-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.5rem;
+      border: 1.5px solid var(--gray-100);
+      transition: all var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--navy), var(--gold));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform var(--transition);
+    }
+    .service-card:hover {
+      transform: translateY(-6px) scale(1.025);
+      box-shadow: var(--shadow-xl);
+      border-color: rgba(30,58,138,.2);
+    }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-icon {
+      width: 56px; height: 56px;
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      margin-bottom: 1.25rem;
+    }
+    .service-icon svg { width: 28px; height: 28px; }
+    .icon-navy { background: rgba(30,58,138,.1); }
+    .icon-navy svg { fill: var(--navy); }
+    .icon-gold { background: rgba(245,158,11,.1); }
+    .icon-gold svg { fill: var(--gold); }
+    .icon-green { background: rgba(16,185,129,.1); }
+    .icon-green svg { fill: var(--green); }
+    .icon-purple { background: rgba(139,92,246,.1); }
+    .icon-purple svg { fill: #8b5cf6; }
+    .service-card h3 {
+      font-size: 1.125rem;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: .25rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      .service-card h3 { color: #93c5fd; }
+    }
+    .service-niche {
+      font-size: .8rem;
+      color: var(--gray-500);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .service-list {
+      margin-bottom: 1.25rem;
+    }
+    .service-list li {
+      font-size: .875rem;
+      color: var(--gray-700);
+      padding: .3rem 0;
+      padding-left: 1.25rem;
+      position: relative;
+      border-bottom: 1px solid var(--gray-100);
+    }
+    .service-list li:last-child { border-bottom: none; }
+    .service-list li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 50%;
+      transform: translateY(-50%);
+      width: 6px; height: 6px;
+      background: var(--green);
+      border-radius: 50%;
+    }
+    .service-price {
+      display: inline-flex;
+      align-items: baseline;
+      gap: .25rem;
+      background: var(--navy);
+      color: #fff;
+      padding: .4rem .9rem;
+      border-radius: 100px;
+      font-size: .825rem;
+      font-weight: 700;
+    }
+    .service-price span {
+      font-size: .7rem;
+      opacity: .8;
+    }
+
+    /* ============================================
+       PORTFOLIO
+    ============================================ */
+    .portfolio { background: var(--white); }
+    .portfolio-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+    @media (max-width: 767px) {
+      .portfolio-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 499px) {
+      .portfolio-grid { grid-template-columns: 1fr; }
+    }
+    .portfolio-card {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1.5px solid var(--gray-100);
+      transition: all var(--transition);
+      position: relative;
+    }
+    .portfolio-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    .portfolio-thumb {
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+    }
+    /* CSS-art portfolio mockups */
+    .pt-1 { background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); }
+    .pt-2 { background: linear-gradient(135deg, #16a34a 0%, #15803d 100%); }
+    .pt-3 { background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); }
+    .pt-4 { background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); }
+    .pt-5 { background: linear-gradient(135deg, #e11d48 0%, #be123c 100%); }
+    .pt-6 { background: linear-gradient(135deg, #0f766e 0%, #0d9488 100%); }
+    /* Browser chrome mockup inside */
+    .browser-mock {
+      position: absolute;
+      inset: 1rem;
+      background: rgba(255,255,255,.12);
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,.2);
+      overflow: hidden;
+    }
+    .browser-bar {
+      height: 24px;
+      background: rgba(0,0,0,.2);
+      display: flex;
+      align-items: center;
+      padding: 0 .5rem;
+      gap: .3rem;
+    }
+    .browser-dot { width: 6px; height: 6px; border-radius: 50%; }
+    .bd-r { background: #ff5f57; }
+    .bd-y { background: #ffbd2e; }
+    .bd-g { background: #28c940; }
+    .browser-content {
+      padding: .5rem;
+    }
+    .bc-line {
+      height: 6px;
+      background: rgba(255,255,255,.3);
+      border-radius: 3px;
+      margin-bottom: .4rem;
+    }
+    .bc-line.w80 { width: 80%; }
+    .bc-line.w60 { width: 60%; }
+    .bc-line.w90 { width: 90%; }
+    .bc-block {
+      height: 50px;
+      background: rgba(255,255,255,.15);
+      border-radius: 4px;
+      margin-bottom: .4rem;
+    }
+    /* Overlay */
+    .portfolio-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(30,58,138,.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity var(--transition);
+    }
+    .portfolio-card:hover .portfolio-overlay { opacity: 1; }
+    .overlay-btn {
+      background: #fff;
+      color: var(--navy);
+      padding: .6rem 1.25rem;
+      border-radius: 100px;
+      font-size: .875rem;
+      font-weight: 700;
+      transition: all var(--transition);
+    }
+    .overlay-btn:hover { background: var(--gold); color: #fff; }
+    .portfolio-info {
+      background: var(--white);
+      padding: 1.25rem;
+    }
+    .portfolio-tag {
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: .35rem;
+    }
+    .portfolio-info h3 {
+      font-weight: 800;
+      font-size: .9375rem;
+      color: var(--navy);
+      margin-bottom: .25rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      .portfolio-info { background: #1e293b; }
+      .portfolio-info h3 { color: #93c5fd; }
+    }
+    .portfolio-info p {
+      font-size: .8125rem;
+      color: var(--gray-500);
+    }
+
+    /* ============================================
+       PROCESS SECTION
+    ============================================ */
+    .process { background: var(--navy); }
+    .process .section-title { color: #fff; }
+    .process .section-sub { color: rgba(255,255,255,.7); }
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      position: relative;
+    }
+    @media (max-width: 767px) {
+      .process-steps { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 400px) {
+      .process-steps { grid-template-columns: 1fr; }
+    }
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 28px; left: calc(12.5% + 1rem);
+      right: calc(12.5% + 1rem);
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--green));
+    }
+    @media (max-width: 767px) {
+      .process-steps::before { display: none; }
+    }
+    .process-step {
+      text-align: center;
+      position: relative;
+    }
+    .step-num {
+      width: 56px; height: 56px;
+      background: linear-gradient(135deg, var(--gold), #f97316);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.25rem;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: #fff;
+      box-shadow: 0 4px 16px rgba(245,158,11,.4);
+      position: relative;
+      z-index: 1;
+    }
+    .step-title {
+      font-size: .9375rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: .5rem;
+    }
+    .step-desc {
+      font-size: .8125rem;
+      color: rgba(255,255,255,.65);
+      line-height: 1.6;
+    }
+
+    /* ============================================
+       ABOUT
+    ============================================ */
+    .about { background: var(--gray-50); }
+    @media (prefers-color-scheme: dark) {
+      .about { background: #0f172a; }
+    }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    @media (max-width: 900px) {
+      .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    }
+    .about-visual {
+      position: relative;
+    }
+    /* Map placeholder */
+    .map-placeholder {
+      width: 100%;
+      height: 320px;
+      background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid var(--gray-100);
+    }
+    @media (prefers-color-scheme: dark) {
+      .map-placeholder { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); }
+    }
+    .map-grid {
+      position: absolute;
+      inset: 0;
+      background-image: 
+        linear-gradient(rgba(30,58,138,.08) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(30,58,138,.08) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+    .map-pin {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: .5rem;
+    }
+    .pin-icon {
+      width: 48px; height: 48px;
+      background: var(--navy);
+      border-radius: 50% 50% 50% 0;
+      transform: rotate(-45deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 12px rgba(30,58,138,.4);
+      animation: pin-bounce 2s ease-in-out infinite;
+    }
+    .pin-icon svg {
+      transform: rotate(45deg);
+      width: 20px; height: 20px; fill: #fff;
+    }
+    @keyframes pin-bounce {
+      0%,100% { transform: rotate(-45deg) translateY(0); }
+      50% { transform: rotate(-45deg) translateY(-5px); }
+    }
+    .pin-label {
+      background: var(--navy);
+      color: #fff;
+      padding: .4rem .9rem;
+      border-radius: 100px;
+      font-size: .78rem;
+      font-weight: 700;
+      box-shadow: var(--shadow);
+    }
+    .about-team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: .75rem;
+      margin-top: 1rem;
+    }
+    .team-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 1rem;
+      text-align: center;
+      border: 1.5px solid var(--gray-100);
+      transition: transform var(--transition);
+    }
+    .team-card:hover { transform: translateY(-4px); }
+    .team-avatar {
+      width: 60px; height: 60px;
+      border-radius: 50%;
+      margin: 0 auto .75rem;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-display);
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: #fff;
+    }
+    .av-1 { background: linear-gradient(135deg, var(--navy), #3b82f6); }
+    .av-2 { background: linear-gradient(135deg, var(--green), #059669); }
+    .av-3 { background: linear-gradient(135deg, var(--gold), #f97316); }
+    .team-name {
+      font-size: .8rem;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: .2rem;
+    }
+    @media (prefers-color-scheme: dark) {
+      .team-card { background: #1e293b; }
+      .team-name { color: #93c5fd; }
+    }
+    .team-role {
+      font-size: .72rem;
+      color: var(--gray-500);
+    }
+    .about-highlights {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .highlight-item {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      border: 1.5px solid var(--gray-100);
+      position: relative;
+      overflow: hidden;
+    }
+    @media (prefers-color-scheme: dark) {
+      .highlight-item { background: #1e293b; }
+    }
+    .highlight-item::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 4px; height: 100%;
+      background: var(--navy);
+    }
+    .highlight-icon { font-size: 1.5rem; margin-bottom: .5rem; }
+    .highlight-num {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      font-weight: 900;
+      color: var(--navy);
+      line-height: 1;
+    }
+    @media (prefers-color-scheme: dark) {
+      .highlight-num { color: #93c5fd; }
+    }
+    .highlight-text {
+      font-size: .8rem;
+      color: var(--gray-500);
+      font-weight: 600;
+    }
+    .about-contact-info {
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
+      margin-bottom: 1.5rem;
+    }
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      font-size: .9rem;
+      color: var(--gray-700);
+    }
+    .contact-row svg {
+      width: 18px; height: 18px;
+      fill: var(--navy);
+      flex-shrink: 0;
+    }
+    @media (prefers-color-scheme: dark) {
+      .contact-row { color: var(--gray-300); }
+    }
+
+    /* ============================================
+       TESTIMONIALS (CSS-only carousel)
+    ============================================ */
+    .testimonials { background: var(--white); }
+    .testimonials .section-title { text-align: center; }
+    .testimonials .section-sub { text-align: center; margin-left: auto; margin-right: auto; }
+    /* CSS-only checkbox carousel */
+    .carousel-inputs { display: none; }
+    .carousel-wrapper {
+      position: relative;
+      overflow: hidden;
+    }
+    .carousel-track {
+      display: flex;
+      transition: transform .5s cubic-bezier(.4,0,.2,1);
+    }
+    #t1:checked ~ .carousel-wrapper .carousel-track { transform: translateX(0%); }
+    #t2:checked ~ .carousel-wrapper .carousel-track { transform: translateX(-25%); }
+    #t3:checked ~ .carousel-wrapper .carousel-track { transform: translateX(-50%); }
+    #t4:checked ~ .carousel-wrapper .carousel-track { transform: translateX(-75%); }
+    .testi-card {
+      flex: 0 0 25%;
+      padding: 0 .75rem;
+    }
+    @media (max-width: 767px) {
+      #t1:checked ~ .carousel-wrapper .carousel-track { transform: translateX(0%); }
+      #t2:checked ~ .carousel-wrapper .carousel-track { transform: translateX(-100%); }
+      #t3:checked ~ .carousel-wrapper .carousel-track { transform: translateX(-200%); }
+      #t4:checked ~ .carousel-wrapper .carousel-track { transform: translateX(-300%); }
+      .testi-card { flex: 0 0 100%; }
+    }
+    .testi-inner {
+      background: var(--gray-50);
+      border: 1.5px solid var(--gray-100);
+      border-radius: var(--radius-lg);
+      padding: 2rem;
+      height: 100%;
+    }
+    @media (prefers-color-scheme: dark) {
+      .testi-inner { background: #1e293b; border-color: #334155; }
+    }
+    .testi-stars {
+      display: flex;
+      gap: .2rem;
+      margin-bottom: 1rem;
+      color: var(--gold);
+    }
+    .testi-stars::before {
+      content: '★★★★★';
+      font-size: 1.1rem;
+      letter-spacing: .1rem;
+    }
+    .testi-quote {
+      font-size: .9375rem;
+      color: var(--gray-700);
+      line-height: 1.7;
+      font-style: italic;
+      margin-bottom: 1.25rem;
+      position: relative;
+    }
+    @media (prefers-color-scheme: dark) {
+      .testi-quote { color: var(--gray-300); }
+    }
+    .testi-quote::before {
+      content: '"';
+      font-family: var(--font-display);
+      font-size: 4rem;
+      color: var(--gold);
+      opacity: .3;
+      position: absolute;
+      top: -1.25rem; left: -.5rem;
+      line-height: 1;
+    }
+    .testi-author {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+    }
+    .testi-avatar {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800;
+      font-size: .9rem;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .ta-1 { background: linear-gradient(135deg, var(--navy), #3b82f6); }
+    .ta-2 { background: linear-gradient(135deg, var(--green), #059669); }
+    .ta-3 { background: linear-gradient(135deg, var(--gold), #f97316); }
+    .ta-4 { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
+    .testi-name { font-weight: 800; font-size: .875rem; color: var(--navy); }
+    @media (prefers-color-scheme: dark) {
+      .testi-name { color: #93c5fd; }
+    }
+    .testi-biz { font-size: .78rem; color: var(--gray-500); }
+    /* Carousel dots */
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: .5rem;
+      margin-top: 2rem;
+    }
+    .carousel-dots label {
+      width: 32px; height: 8px;
+      background: var(--gray-200);
+      border-radius: 100px;
+      cursor: pointer;
+      transition: all var(--transition);
+    }
+    #t1:checked ~ .carousel-dots label[for="t1"],
+    #t2:checked ~ .carousel-dots label[for="t2"],
+    #t3:checked ~ .carousel-dots label[for="t3"],
+    #t4:checked ~ .carousel-dots label[for="t4"] {
+      background: var(--navy);
+      width: 48px;
+    }
+
+    /* ============================================
+       CONTACT
+    ============================================ */
+    .contact {
+      background: linear-gradient(135deg, #0d2259 0%, #1E3A8A 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .contact::before {
+      content: '';
+      position: absolute;
+      width: 500px; height: 500px;
+      top: -200px; right: -100px;
+      background: radial-gradient(circle, rgba(245,158,11,.15) 0%, transparent 70%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .contact .section-title { color: #fff; }
+    .contact .section-label { color: var(--gold); background: rgba(245,158,11,.15); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+    }
+    .contact-info-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+    .ci-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: rgba(255,255,255,.9);
+      font-size: .9375rem;
+    }
+    .ci-icon {
+      width: 44px; height: 44px;
+      background: rgba(255,255,255,.1);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .ci-icon svg { width: 20px; height: 20px; fill: var(--gold); }
+    .ci-item a { color: inherit; transition: color var(--transition); }
+    .ci-item a:hover { color: var(--gold); }
+    .contact-social {
+      display: flex;
+      gap: .75rem;
+    }
+    .social-btn {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.2);
+      color: rgba(255,255,255,.9);
+      padding: .6rem 1.1rem;
+      border-radius: 100px;
+      font-size: .8125rem;
+      font-weight: 700;
+      transition: all var(--transition);
+    }
+    .social-btn:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+    .social-btn svg { width: 16px; height: 16px; fill: currentColor; }
+    /* Contact Form */
+    .contact-form {
+      background: rgba(255,255,255,.06);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+    }
+    .form-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 1.5rem;
+    }
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    @media (max-width: 540px) {
+      .form-grid { grid-template-columns: 1fr; }
+      .contact-form { padding: 1.5rem; }
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: .4rem;
+    }
+    .form-group.full { grid-column: 1/-1; }
+    .form-group label {
+      font-size: .8rem;
+      font-weight: 700;
+      color: rgba(255,255,255,.7);
+      text-transform: uppercase;
+      letter-spacing: .07em;
+    }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      background: rgba(255,255,255,.08);
+      border: 1.5px solid rgba(255,255,255,.15);
+      border-radius: 10px;
+      padding: .75rem 1rem;
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: .9375rem;
+      transition: all var(--transition);
+      outline: none;
+    }
+    .form-group select option { background: var(--navy-d); color: #fff; }
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(255,255,255,.35);
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      border-color: var(--gold);
+      background: rgba(255,255,255,.12);
+      box-shadow: 0 0 0 3px rgba(245,158,11,.2);
+    }
+    .form-group textarea { resize: vertical; min-height: 100px; }
+    /* Custom checkbox */
+    .form-check {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+      cursor: pointer;
+      color: rgba(255,255,255,.75);
+      font-size: .8125rem;
+      line-height: 1.5;
+    }
+    .form-check input[type="checkbox"] { display: none; }
+    .custom-check {
+      width: 20px; height: 20px;
+      border: 2px solid rgba(255,255,255,.3);
+      border-radius: 5px;
+      flex-shrink: 0;
+      margin-top: 1px;
+      display: flex; align-items: center; justify-content: center;
+      transition: all var(--transition);
+    }
+    .form-check input:checked + .custom-check {
+      background: var(--green);
+      border-color: var(--green);
+    }
+    .form-check input:checked + .custom-check::after {
+      content: '✓';
+      color: #fff;
+      font-size: .75rem;
+      font-weight: 900;
+    }
+    .form-submit {
+      width: 100%;
+      padding: 1rem;
+      background: var(--gold);
+      color: #fff;
+      border: none;
+      border-radius: 100px;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: .5rem;
+      margin-top: 1.25rem;
+    }
+    .form-submit:hover {
+      background: var(--gold-d);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(245,158,11,.5);
+    }
+    .form-submit svg { width: 18px; height: 18px; fill: currentColor; }
+
+    /* ============================================
+       FOOTER
+    ============================================ */
+    .footer {
+      background: var(--gray-900);
+      color: rgba(255,255,255,.8);
+      padding: 4rem 0 0;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.2fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    @media (max-width: 900px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 500px) {
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+    .footer-brand {}
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: .65rem;
+      margin-bottom: 1rem;
+    }
+    .footer-logo-icon {
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--gold), #f97316);
+      border-radius: 9px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .footer-logo-icon svg { width: 18px; height: 18px; fill: #fff; }
+    .footer-logo-name {
+      font-family: var(--font-display);
+      font-size: .95rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .footer-brand p {
+      font-size: .8375rem;
+      line-height: 1.7;
+      color: rgba(255,255,255,.55);
+      margin-bottom: 1.25rem;
+    }
+    .footer-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+    .footer-badge {
+      display: flex;
+      align-items: center;
+      gap: .35rem;
+      background: rgba(255,255,255,.06);
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 7px;
+      padding: .35rem .7rem;
+      font-size: .72rem;
+      font-weight: 700;
+      color: rgba(255,255,255,.75);
+    }
+    .footer-badge svg { width: 14px; height: 14px; }
+    .footer-col h4 {
+      font-size: .8rem;
+      font-weight: 800;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.5);
+      margin-bottom: 1.1rem;
+    }
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: .55rem;
+    }
+    .footer-links a {
+      font-size: .8375rem;
+      color: rgba(255,255,255,.65);
+      transition: color var(--transition);
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+    }
+    .footer-links a:hover { color: var(--gold); }
+    .footer-links a::before {
+      content: '›';
+      color: var(--gold);
+      font-size: 1rem;
+      line-height: 1;
+    }
+    .footer-contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
+    }
+    .footer-ci {
+      display: flex;
+      align-items: flex-start;
+      gap: .6rem;
+      font-size: .8125rem;
+      color: rgba(255,255,255,.65);
+    }
+    .footer-ci svg { width: 15px; height: 15px; fill: var(--gold); flex-shrink: 0; margin-top: 2px; }
+    .footer-ci a { color: inherit; }
+    .footer-ci a:hover { color: var(--gold); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.08);
+      padding: 1.5rem 0;
+    }
+    .footer-bottom-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-copy {
+      font-size: .78rem;
+      color: rgba(255,255,255,.4);
+    }
+    .footer-copy a { color: var(--gold); }
+    .footer-bottom-links {
+      display: flex;
+      gap: 1.25rem;
+    }
+    .footer-bottom-links a {
+      font-size: .78rem;
+      color: rgba(255,255,255,.4);
+      transition: color var(--transition);
+    }
+    .footer-bottom-links a:hover { color: var(--gold); }
+
+    /* ============================================
+       SCROLL ANIMATIONS (pure CSS)
+    ============================================ */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .animate-on-scroll {
+      animation: fadeIn .7s ease both;
+    }
+    /* Stagger via animation-delay on children */
+    .service-card:nth-child(1) { animation-delay: .05s; }
+    .service-card:nth-child(2) { animation-delay: .1s; }
+    .service-card:nth-child(3) { animation-delay: .15s; }
+    .service-card:nth-child(4) { animation-delay: .2s; }
+    .portfolio-card:nth-child(1) { animation-delay: .05s; }
+    .portfolio-card:nth-child(2) { animation-delay: .1s; }
+    .portfolio-card:nth-child(3) { animation-delay: .15s; }
+    .portfolio-card:nth-child(4) { animation-delay: .2s; }
+    .portfolio-card:nth-child(5) { animation-delay: .25s; }
+    .portfolio-card:nth-child(6) { animation-delay: .3s; }
+
+    /* ============================================
+       PRINT
+    ============================================ */
+    @media print {
+      .nav-wrapper, .hero-visual, .carousel-inputs,
+      .carousel-dots, .contact-form { display: none !important; }
+      body { color: #000; }
+      a { color: #000; }
+      .hero { background: #fff !important; min-height: auto; padding: 2rem 0; }
+      .hero h1 { color: #000; }
+      .section { padding: 2rem 0; }
+    }
+
+    /* ============================================
+       MISC
+    ============================================ */
+    .text-center { text-align: center; }
+    .mb-1 { margin-bottom: .5rem; }
+    .mb-2 { margin-bottom: 1rem; }
+    .mb-3 { margin-bottom: 1.5rem; }
+    .faq-section {
+      background: var(--gray-50);
+      padding: 4rem 0;
+    }
+    @media (prefers-color-scheme: dark) {
+      .faq-section { background: #0f172a; }
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.25rem;
+    }
+    @media (max-width: 640px) {
+      .faq-grid { grid-template-columns: 1fr; }
+    }
+    /* CSS-only accordion */
+    .faq-item input { display: none; }
+    .faq-item {
+      background: var(--white);
+      border: 1.5px solid var(--gray-100);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    @media (prefers-color-scheme: dark) {
+      .faq-item { background: #1e293b; border-color: #334155; }
+    }
+    .faq-label {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.125rem 1.25rem;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: .9375rem;
+      color: var(--navy);
+      gap: 1rem;
+      user-select: none;
+    }
+    @media (prefers-color-scheme: dark) {
+      .faq-label { color: #93c5fd; }
+    }
+    .faq-arrow {
+      width: 24px; height: 24px;
+      background: var(--gray-100);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: all var(--transition);
+      color: var(--navy);
+      font-size: .9rem;
+    }
+    .faq-item input:checked ~ .faq-label .faq-arrow {
+      background: var(--navy);
+      color: #fff;
+      transform: rotate(180deg);
+    }
+    .faq-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height .4s ease;
+    }
+    .faq-item input:checked ~ .faq-body {
+      max-height: 300px;
+    }
+    .faq-body p {
+      padding: 0 1.25rem 1.25rem;
+      font-size: .875rem;
+      color: var(--gray-500);
+      line-height: 1.7;
+    }
+
+    /* Scroll-to-top */
+    .scroll-top {
+      position: fixed;
+      bottom: 2rem; right: 1.5rem;
+      width: 44px; height: 44px;
+      background: var(--navy);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-lg);
+      z-index: 900;
+      transition: all var(--transition);
+      text-decoration: none;
+      opacity: .9;
+    }
+    .scroll-top:hover {
+      background: var(--gold);
+      transform: translateY(-3px);
+    }
+    .scroll-top svg { width: 18px; height: 18px; fill: #fff; }
+
+    /* WhatsApp CTA float */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 5.5rem; right: 1.5rem;
+      width: 52px; height: 52px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(37,211,102,.5);
+      z-index: 900;
+      transition: all var(--transition);
+    }
+    .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 24px rgba(37,211,102,.6); }
+    .whatsapp-float svg { width: 28px; height: 28px; fill: #fff; }
+  </style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- Floating actions -->
+<a href="#contact" class="scroll-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/></svg>
+</a>
+<a href="https://wa.me/254723923518?text=Hi,%20I%20found%20you%20on%20your%20website%20and%20I%27m%20interested%20in%20your%20services." class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav-wrapper" role="banner">
+  <nav class="nav container" aria-label="Main navigation">
+    <a href="#" class="nav-logo" aria-label="Imperial Solutions Digital Home">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <div class="nav-logo-text">
+        <div class="nav-logo-name">Imperial Solutions</div>
+        <div class="nav-logo-tag">Digital Agency · Nairobi</div>
+      </div>
+    </a>
+    <input type="checkbox" id="nav-check">
+    <label class="nav-toggle" for="nav-check" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </label>
+    <ul class="nav-links" role="list">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact" class="nav-cta">Get Free Quote</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" aria-label="Hero" id="home">
+  <div class="hero-mesh" aria-hidden="true"></div>
+
+  <!-- Nairobi Skyline SVG -->
+  <svg class="hero-skyline" viewBox="0 0 1440 260" fill="white" preserveAspectRatio="none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <rect x="0" y="200" width="1440" height="60"/>
+    <rect x="20" y="140" width="40" height="60"/><rect x="25" y="120" width="30" height="20"/>
+    <rect x="80" y="100" width="60" height="100"/><rect x="95" y="80" width="30" height="20"/>
+    <rect x="160" y="130" width="50" height="70"/>
+    <rect x="230" y="80" width="70" height="120"/><rect x="245" y="60" width="40" height="20"/><rect x="260" y="40" width="10" height="20"/>
+    <rect x="320" y="110" width="55" height="90"/>
+    <rect x="395" y="60" width="80" height="140"/><rect x="415" y="40" width="40" height="20"/><rect x="430" y="20" width="10" height="20"/>
+    <rect x="490" y="90" width="60" height="110"/>
+    <rect x="570" y="70" width="90" height="130"/><rect x="590" y="50" width="50" height="20"/>
+    <rect x="680" y="100" width="55" height="100"/>
+    <rect x="755" y="50" width="85" height="150"/><rect x="775" y="30" width="45" height="20"/><rect x="793" y="10" width="9" height="20"/>
+    <rect x="860" y="120" width="50" height="80"/>
+    <rect x="930" y="80" width="70" height="120"/><rect x="945" y="60" width="40" height="20"/>
+    <rect x="1020" y="110" width="55" height="90"/>
+    <rect x="1095" y="70" width="80" height="130"/><rect x="1115" y="50" width="40" height="20"/>
+    <rect x="1195" y="130" width="45" height="70"/>
+    <rect x="1260" y="100" width="60" height="100"/>
+    <rect x="1340" y="80" width="70" height="120"/>
+  </svg>
+
+  <div class="container hero-content">
+    <div class="hero-grid">
+      <div>
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          #1 Digital Agency in Nairobi
+        </div>
+        <h1>
+          <em>Imperial Solutions Digital</em> — Web Design &amp; Digital Marketing Nairobi
+        </h1>
+        <p class="hero-subtitle">
+          Transform Your Business with Custom Websites, SEO &amp; Social Media Strategies in Kenya. From KSh 15,000.
+        </p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-gold">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Get Free Quote
+          </a>
+          <a href="#portfolio" class="btn btn-outline">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+            View Portfolio
+          </a>
+        </div>
+        <div class="hero-trust">
+          <span class="hero-trust-label">Trusted &amp; Secure</span>
+          <div class="trust-badges">
+            <div class="trust-badge">
+              <!-- M-Pesa icon -->
+              <svg viewBox="0 0 24 24" fill="#00a651"><rect x="2" y="6" width="20" height="12" rx="2" fill="none" stroke="#00a651" stroke-width="1.5"/><text x="12" y="14.5" font-size="5" text-anchor="middle" fill="#00a651" font-weight="bold">M-PESA</text></svg>
+              M-Pesa
+            </div>
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2" fill="none" stroke="rgba(255,255,255,0.8)" stroke-width="1.5"/><rect x="2" y="9" width="20" height="3" fill="rgba(255,255,255,0.5)"/></svg>
+              Visa/Card
+            </div>
+            <div class="trust-badge">
+              <svg viewBox="0 0 24 24" fill="rgba(255,255,255,0.8)"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4zm0 10.9V8l3 3-3 3.9z"/></svg>
+              SSL Secure
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card Stack -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card-stack">
+          <div class="hero-card hero-card-back">
+            <div style="height:8px;background:rgba(255,255,255,.15);border-radius:4px;width:70%;margin-bottom:.5rem;"></div>
+            <div style="height:8px;background:rgba(255,255,255,.1);border-radius:4px;width:50%;"></div>
+          </div>
+          <div class="hero-card hero-card-main">
+            <div class="hc-icon">
+              <svg viewBox="0 0 24 24"><path d="M3 3h18v18H3V3zm16 16V5H5v14h14zM7 7h4v4H7V7zm0 6h10v2H7v-2zm6-6h4v4h-4V7z"/></svg>
+            </div>
+            <div class="hc-title">Your Business Online</div>
+            <div class="hc-sub">Professional web presence in Nairobi</div>
+            <div class="hc-stats">
+              <div class="hc-stat">
+                <div class="hc-stat-num">50+</div>
+                <div class="hc-stat-lbl">Clients</div>
+              </div>
+              <div class="hc-stat">
+                <div class="hc-stat-num">200%</div>
+                <div class="hc-stat-lbl">Avg Traffic</div>
+              </div>
+              <div class="hc-stat">
+                <div class="hc-stat-num">10+</div>
+                <div class="hc-stat-lbl">Yrs Exp</div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-float-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            Free Quote Available
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-down" aria-hidden="true">
+    <div class="scroll-arrow">
+      <svg viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z"/></svg>
+    </div>
+    Scroll
+  </div>
+</section>
+
+<!-- ============ STATS BAR ============ -->
+<section class="stats-bar" aria-label="Company statistics">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Years in Kenya</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">50+</div>
+        <div class="stat-label">Kenyan Clients</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">200%</div>
+        <div class="stat-label">Avg Traffic Growth</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">24/7</div>
+        <div class="stat-label">Support</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section services" id="services" aria-label="Services">
+  <div class="container">
+    <div class="text-center mb-3">
+      <span class="section-label">What We Offer</span>
+      <h2 class="section-title">Digital Services for Kenyan Businesses</h2>
+      <p class="section-sub" style="margin:0 auto 2.5rem;">From professional websites to full digital marketing campaigns — tailored for Nairobi's competitive market.</p>
+    </div>
+    <div class="services-grid">
+
+      <!-- Web Design -->
+      <article class="service-card animate-on-scroll">
+        <div class="service-icon icon-navy">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
+        </div>
+        <h3>Web Design</h3>
+        <div class="service-niche">Corporate &amp; Business Websites</div>
+        <ul class="service-list" aria-label="Web design features">
+          <li>Fully Responsive (Mobile-First)</li>
+          <li>Custom Corporate Design</li>
+          <li>SEO-Ready Structure</li>
+          <li>Contact Forms &amp; Maps</li>
+          <li>Fast Loading &lt;2s</li>
+        </ul>
+        <div class="service-price">From KSh 15,000 <span>/ project</span></div>
+      </article>
+
+      <!-- SEO -->
+      <article class="service-card animate-on-scroll">
+        <div class="service-icon icon-gold">
+          <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        </div>
+        <h3>SEO Optimization</h3>
+        <div class="service-niche">Local SEO Kenya &amp; Google Ranking</div>
+        <ul class="service-list" aria-label="SEO features">
+          <li>Google Business Profile</li>
+          <li>Local Nairobi SEO</li>
+          <li>Keyword Research (Kenyan)</li>
+          <li>Content Optimization</li>
+          <li>Traffic +200% Avg Growth</li>
+        </ul>
+        <div class="service-price">From KSh 8,000 <span>/ month</span></div>
+      </article>
+
+      <!-- E-commerce -->
+      <article class="service-card animate-on-scroll">
+        <div class="service-icon icon-green">
+          <svg viewBox="0 0 24 24"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96C5 16.1 6.1 17 7.5 17H19v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63H15c.75 0 1.41-.41 1.75-1.03l3.58-6.49A1 1 0 0019.5 4H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+        </div>
+        <h3>E-Commerce</h3>
+        <div class="service-niche">WooCommerce &amp; M-Pesa Integration</div>
+        <ul class="service-list" aria-label="E-commerce features">
+          <li>WooCommerce Stores</li>
+          <li>M-Pesa Daraja API</li>
+          <li>Product Catalog &amp; Search</li>
+          <li>Secure Checkout</li>
+          <li>Order Management</li>
+        </ul>
+        <div class="service-price">From KSh 35,000 <span>/ project</span></div>
+      </article>
+
+      <!-- Social Media -->
+      <article class="service-card animate-on-scroll">
+        <div class="service-icon icon-purple">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        </div>
+        <h3>Social Media</h3>
+        <div class="service-niche">Facebook, Instagram &amp; TikTok Kenya</div>
+        <ul class="service-list" aria-label="Social media features">
+          <li>Facebook &amp; Instagram Ads</li>
+          <li>Content Creation</li>
+          <li>Community Management</li>
+          <li>Engagement Campaigns</li>
+          <li>Monthly Analytics Reports</li>
+        </ul>
+        <div class="service-price">From KSh 12,000 <span>/ month</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PORTFOLIO ============ -->
+<section class="section portfolio" id="portfolio" aria-label="Portfolio">
+  <div class="container">
+    <div class="portfolio-header">
+      <div>
+        <span class="section-label">Our Work</span>
+        <h2 class="section-title">Kenyan Business Websites We've Built</h2>
+        <p class="section-sub">From cleaning companies to loan platforms — we build for every Nairobi niche.</p>
+      </div>
+      <a href="#contact" class="btn btn-navy">Start Your Project</a>
+    </div>
+    <div class="portfolio-grid">
+
+      <article class="portfolio-card animate-on-scroll">
+        <div class="portfolio-thumb pt-1">
+          <div class="browser-mock">
+            <div class="browser-bar"><span class="browser-dot bd-r"></span><span class="browser-dot bd-y"></span><span class="browser-dot bd-g"></span></div>
+            <div class="browser-content">
+              <div class="bc-line w80"></div><div class="bc-line w60"></div>
+              <div class="bc-block"></div>
+              <div class="bc-line w90"></div>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <a href="#contact" class="overlay-btn">Start Similar Project</a>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <div class="portfolio-tag">Cleaning Services</div>
+          <h3>NairobiClean Pro</h3>
+          <p>Full-service cleaning company site with online booking &amp; M-Pesa payment</p>
+        </div>
+      </article>
+
+      <article class="portfolio-card animate-on-scroll">
+        <div class="portfolio-thumb pt-2">
+          <div class="browser-mock">
+            <div class="browser-bar"><span class="browser-dot bd-r"></span><span class="browser-dot bd-y"></span><span class="browser-dot bd-g"></span></div>
+            <div class="browser-content">
+              <div class="bc-line w60"></div>
+              <div class="bc-block"></div>
+              <div class="bc-line w80"></div><div class="bc-line w90"></div>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <a href="#contact" class="overlay-btn">Start Similar Project</a>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <div class="portfolio-tag">Finance &amp; Loans</div>
+          <h3>QuickLoan Calculator</h3>
+          <p>Microfinance platform with real-time loan calculator and application form</p>
+        </div>
+      </article>
+
+      <article class="portfolio-card animate-on-scroll">
+        <div class="portfolio-thumb pt-3">
+          <div class="browser-mock">
+            <div class="browser-bar"><span class="browser-dot bd-r"></span><span class="browser-dot bd-y"></span><span class="browser-dot bd-g"></span></div>
+            <div class="browser-content">
+              <div class="bc-block"></div>
+              <div class="bc-line w70"></div><div class="bc-line w50"></div>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <a href="#contact" class="overlay-btn">Start Similar Project</a>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <div class="portfolio-tag">Repairs &amp; Maintenance</div>
+          <h3>FixIt Nairobi Directory</h3>
+          <p>Repair services directory for plumbing, electrical &amp; home services</p>
+        </div>
+      </article>
+
+      <article class="portfolio-card animate-on-scroll">
+        <div class="portfolio-thumb pt-4">
+          <div class="browser-mock">
+            <div class="browser-bar"><span class="browser-dot bd-r"></span><span class="browser-dot bd-y"></span><span class="browser-dot bd-g"></span></div>
+            <div class="browser-content">
+              <div class="bc-line w80"></div>
+              <div class="bc-block"></div>
+              <div class="bc-line w60"></div><div class="bc-line w90"></div>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <a href="#contact" class="overlay-btn">Start Similar Project</a>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <div class="portfolio-tag">E-Commerce</div>
+          <h3>Duka Online Store</h3>
+          <p>WooCommerce store with M-Pesa checkout for Nairobi retail business</p>
+        </div>
+      </article>
+
+      <article class="portfolio-card animate-on-scroll">
+        <div class="portfolio-thumb pt-5">
+          <div class="browser-mock">
+            <div class="browser-bar"><span class="browser-dot bd-r"></span><span class="browser-dot bd-y"></span><span class="browser-dot bd-g"></span></div>
+            <div class="browser-content">
+              <div class="bc-line w90"></div><div class="bc-line w60"></div>
+              <div class="bc-block"></div>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <a href="#contact" class="overlay-btn">Start Similar Project</a>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <div class="portfolio-tag">Banking &amp; Finance</div>
+          <h3>Sacco Member Portal</h3>
+          <p>Member management and loan portal for a Kenyan Sacco cooperative</p>
+        </div>
+      </article>
+
+      <article class="portfolio-card animate-on-scroll">
+        <div class="portfolio-thumb pt-6">
+          <div class="browser-mock">
+            <div class="browser-bar"><span class="browser-dot bd-r"></span><span class="browser-dot bd-y"></span><span class="browser-dot bd-g"></span></div>
+            <div class="browser-content">
+              <div class="bc-block"></div>
+              <div class="bc-line w80"></div><div class="bc-line w70"></div>
+            </div>
+          </div>
+          <div class="portfolio-overlay">
+            <a href="#contact" class="overlay-btn">Start Similar Project</a>
+          </div>
+        </div>
+        <div class="portfolio-info">
+          <div class="portfolio-tag">Real Estate</div>
+          <h3>Nyumba Listings Kenya</h3>
+          <p>Property listings platform with search, filters and agent contacts</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section process" aria-label="Our process">
+  <div class="container">
+    <div class="text-center mb-3">
+      <span class="section-label" style="color:var(--gold);background:rgba(245,158,11,.15);">How It Works</span>
+      <h2 class="section-title">Our 4-Step Process</h2>
+      <p class="section-sub">From first call to live website — a proven process honed over 10 years in Kenya.</p>
+    </div>
+    <ol class="process-steps" aria-label="Process steps">
+      <li class="process-step">
+        <div class="step-num">1</div>
+        <div class="step-title">Free Consultation</div>
+        <div class="step-desc">We listen to your business goals, understand your audience, and recommend the right solution.</div>
+      </li>
+      <li class="process-step">
+        <div class="step-num">2</div>
+        <div class="step-title">Design &amp; Plan</div>
+        <div class="step-desc">We design wireframes and mockups, agree on content, and build a clear project timeline.</div>
+      </li>
+      <li class="process-step">
+        <div class="step-num">3</div>
+        <div class="step-title">Build &amp; Test</div>
+        <div class="step-desc">We develop your site, integrate M-Pesa if needed, and test across all devices and browsers.</div>
+      </li>
+      <li class="process-step">
+        <div class="step-num">4</div>
+        <div class="step-title">Launch &amp; Grow</div>
+        <div class="step-desc">We deploy your site, set up SEO, train you on the dashboard, and provide ongoing support.</div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about" aria-label="About Imperial Solutions Digital">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual">
+        <div class="map-placeholder" role="img" aria-label="Map showing Westlands, Nairobi location">
+          <div class="map-grid"></div>
+          <div class="map-pin">
+            <div class="pin-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div class="pin-label">Westlands, Nairobi</div>
+          </div>
+        </div>
+        <div class="about-team-grid" style="margin-top:1.25rem;">
+          <div class="team-card">
+            <div class="team-avatar av-1">JM</div>
+            <div class="team-name">James Mwangi</div>
+            <div class="team-role">Lead Developer</div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar av-2">AK</div>
+            <div class="team-name">Alice Kamau</div>
+            <div class="team-role">SEO Strategist</div>
+          </div>
+          <div class="team-card">
+            <div class="team-avatar av-3">BN</div>
+            <div class="team-name">Brian Njoroge</div>
+            <div class="team-role">Creative Director</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-label">About Us</span>
+        <h2 class="section-title">Nairobi's Trusted Digital Partner Since 2014</h2>
+        <p class="section-sub">Imperial Solutions Digital is a full-service web design and digital marketing agency based in Westlands, Nairobi. We help Kenyan businesses grow online with beautiful websites, effective SEO, and powerful social media campaigns.</p>
+
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="highlight-icon">🏆</div>
+            <div class="highlight-num">10+</div>
+            <div class="highlight-text">Years Experience in Kenya</div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">👥</div>
+            <div class="highlight-num">50+</div>
+            <div class="highlight-text">Satisfied Kenyan Clients</div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">📈</div>
+            <div class="highlight-num">200%</div>
+            <div class="highlight-text">Average Traffic Growth</div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-icon">⚡</div>
+            <div class="highlight-num">48h</div>
+            <div class="highlight-text">Average Response Time</div>
+          </div>
+        </div>
+
+        <div class="about-contact-info">
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <a href="tel:+254723923518">+254 723 923518</a>
+          </div>
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:info@imperialsolutions.digital">info@imperialsolutions.digital</a>
+          </div>
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            Westlands, Nairobi, Kenya
+          </div>
+        </div>
+
+        <a href="#contact" class="btn btn-navy">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+          Call Us Now
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section testimonials" id="testimonials" aria-label="Client testimonials">
+  <div class="container">
+    <div class="text-center mb-3">
+      <span class="section-label">Client Love</span>
+      <h2 class="section-title">What Our Kenyan Clients Say</h2>
+      <p class="section-sub">Real results from real businesses across Nairobi and Kenya.</p>
+    </div>
+
+    <input class="carousel-inputs" type="radio" name="testimonials" id="t1" checked>
+    <input class="carousel-inputs" type="radio" name="testimonials" id="t2">
+    <input class="carousel-inputs" type="radio" name="testimonials" id="t3">
+    <input class="carousel-inputs" type="radio" name="testimonials" id="t4">
+
+    <div class="carousel-wrapper" aria-label="Testimonials carousel">
+      <div class="carousel-track" role="list">
+        <div class="testi-card" role="listitem">
+          <div class="testi-inner">
+            <div class="testi-stars" aria-label="5 stars"></div>
+            <p class="testi-quote">Imperial Solutions built us a stunning cleaning company website. Our leads doubled in just 3 months! The M-Pesa integration was seamless — our customers love the easy booking.</p>
+            <div class="testi-author">
+              <div class="testi-avatar ta-1">SM</div>
+              <div>
+                <div class="testi-name">Samuel Mutua</div>
+                <div class="testi-biz">CEO, NairobiClean Pro</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card" role="listitem">
+          <div class="testi-inner">
+            <div class="testi-stars" aria-label="5 stars"></div>
+            <p class="testi-quote">Our Google ranking went from page 5 to page 1 within 4 months. The team really understands the Kenyan market — they optimized for exactly the keywords our customers search.</p>
+            <div class="testi-author">
+              <div class="testi-avatar ta-2">GW</div>
+              <div>
+                <div class="testi-name">Grace Wanjiku</div>
+                <div class="testi-biz">Director, QuickLoan Kenya</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card" role="listitem">
+          <div class="testi-inner">
+            <div class="testi-stars" aria-label="5 stars"></div>
+            <p class="testi-quote">We needed an e-commerce store fast. Imperial Solutions delivered in 2 weeks — fully functional, beautiful, and with M-Pesa working perfectly. Sales increased 180% in the first month!</p>
+            <div class="testi-author">
+              <div class="testi-avatar ta-3">PK</div>
+              <div>
+                <div class="testi-name">Peter Kamau</div>
+                <div class="testi-biz">Owner, Duka Online</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card" role="listitem">
+          <div class="testi-inner">
+            <div class="testi-stars" aria-label="5 stars"></div>
+            <p class="testi-quote">The social media campaigns they ran for our repair business were incredible. Our Facebook page grew by 3,000 followers in 2 months and we're getting 20+ leads a week now.</p>
+            <div class="testi-author">
+              <div class="testi-avatar ta-4">AN</div>
+              <div>
+                <div class="testi-name">Agnes Njeri</div>
+                <div class="testi-biz">Manager, FixIt Nairobi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-dots" aria-label="Select testimonial">
+      <label for="t1" aria-label="Testimonial 1"></label>
+      <label for="t2" aria-label="Testimonial 2"></label>
+      <label for="t3" aria-label="Testimonial 3"></label>
+      <label for="t4" aria-label="Testimonial 4"></label>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq-section" aria-label="Frequently asked questions">
+  <div class="container">
+    <div class="text-center mb-3">
+      <span class="section-label">FAQ</span>
+      <h2 class="section-title">Common Questions</h2>
+      <p class="section-sub" style="margin:0 auto 2rem;">Everything you need to know about working with us in Kenya.</p>
+    </div>
+    <div class="faq-grid">
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq1">
+        <label class="faq-label" for="faq1">
+          How much does web design cost in Nairobi?
+          <span class="faq-arrow">▾</span>
+        </label>
+        <div class="faq-body">
+          <p>Our web design packages start from <strong>KSh 15,000</strong> for a professional corporate website. E-commerce sites with M-Pesa integration start from KSh 35,000. We offer flexible payment plans — including M-Pesa installments. Contact us for a free quote tailored to your business.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq2">
+        <label class="faq-label" for="faq2">
+          Do you integrate M-Pesa into websites?
+          <span class="faq-arrow">▾</span>
+        </label>
+        <div class="faq-body">
+          <p>Yes! We specialize in <strong>M-Pesa Daraja API integration</strong> for e-commerce stores, loan platforms, and service booking sites. We handle the full Safaricom developer setup, testing, and deployment — your customers can pay via M-Pesa directly on your site.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq3">
+        <label class="faq-label" for="faq3">
+          How long does it take to build a website?
+          <span class="faq-arrow">▾</span>
+        </label>
+        <div class="faq-body">
+          <p>A standard corporate website typically takes <strong>1–2 weeks</strong>. E-commerce sites take 2–4 weeks depending on the number of products and integrations. We work fast without compromising quality, and we keep you updated at every stage.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="faq4">
+        <label class="faq-label" for="faq4">
+          Do you offer SEO for Kenya-specific searches?
+          <span class="faq-arrow">▾</span>
+        </label>
+        <div class="faq-body">
+          <p>Absolutely. Our SEO team understands the <strong>Kenyan search landscape</strong> — we optimize for how Nairobi customers actually search. This includes Google Business Profile, local citations, Swahili/English keyword blends, and competitor analysis in your specific niche.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact" aria-label="Contact us">
+  <div class="container">
+    <div class="contact-grid">
+      <div>
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Get Your Free Consultation Today</h2>
+        <p class="section-sub" style="color:rgba(255,255,255,.75);">Let's talk about your business goals. No obligation, no pressure — just honest advice from Nairobi's digital experts.</p>
+
+        <div class="contact-info-list">
+          <div class="ci-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div>
+              <div style="font-size:.78rem;color:rgba(255,255,255,.5);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.2rem;">Phone / WhatsApp</div>
+              <a href="tel:+254723923518" style="font-weight:700;font-size:1.05rem;">+254 723 923518</a>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div>
+              <div style="font-size:.78rem;color:rgba(255,255,255,.5);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.2rem;">Email</div>
+              <a href="mailto:info@imperialsolutions.digital" style="font-weight:600;">info@imperialsolutions.digital</a>
+            </div>
+          </div>
+          <div class="ci-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div>
+              <div style="font-size:.78rem;color:rgba(255,255,255,.5);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.2rem;">Address</div>
+              <span style="font-weight:600;">Westlands, Nairobi, Kenya</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <a href="https://web.facebook.com/imperialsolution.net" class="social-btn" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+          </a>
+          <a href="https://wa.me/254723923518" class="social-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form">
+        <div class="form-title">Send Us a Message</div>
+        <form action="https://formspree.io/f/info@imperialsolutions.digital" method="POST" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="John Kamau" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" placeholder="+254 7xx xxx xxx" autocomplete="tel">
+            </div>
+            <div class="form-group full">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="john@yourbusiness.co.ke" required autocomplete="email">
+            </div>
+            <div class="form-group full">
+              <label for="service">Service Interested In</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service…</option>
+                <option value="web-design">Web Design</option>
+                <option value="seo">SEO Optimization</option>
+                <option value="ecommerce">E-Commerce + M-Pesa</option>
+                <option value="social-media">Social Media Marketing</option>
+                <option value="full-package">Full Digital Package</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="message">Tell Us About Your Business</label>
+              <textarea id="message" name="message" placeholder="Briefly describe your business and what you need help with…" rows="4"></textarea>
+            </div>
+            <div class="form-group full">
+              <label class="form-check">
+                <input type="checkbox" required>
+                <span class="custom-check"></span>
+                I agree to be contacted by Imperial Solutions Digital regarding my enquiry.
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="form-submit">
+            <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+            Send Message — It's Free!
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" role="contentinfo" aria-label="Site footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-icon">
+            <svg viewBox="0 0 24 24" fill="white"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          </div>
+          <div class="footer-logo-name">Imperial Solutions Digital</div>
+        </div>
+        <p>Nairobi's leading web design and digital marketing agency. We help Kenyan businesses grow online with custom websites, powerful SEO, and targeted social media campaigns.</p>
+        <div class="footer-badges">
+          <div class="footer-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#00a651"><rect x="1" y="5" width="22" height="14" rx="2" fill="none" stroke="#00a651" stroke-width="1.5"/><text x="12" y="14" font-size="5.5" text-anchor="middle" fill="#00a651" font-weight="bold">M-PESA</text></svg>
+            M-Pesa
+          </div>
+          <div class="footer-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            Visa/Card
+          </div>
+          <div class="footer-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(255,255,255,0.7)"><path d="M12 1L3 5v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V5l-9-4z"/></svg>
+            SSL Secure
+          </div>
+          <div class="footer-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(255,255,255,0.7)"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+            Verified Agency
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#testimonials">Client Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Web Design Nairobi</a></li>
+          <li><a href="#services">SEO Kenya</a></li>
+          <li><a href="#services">E-Commerce + M-Pesa</a></li>
+          <li><a href="#services">Social Media Marketing</a></li>
+          <li><a href="#services">Google Ads Kenya</a></li>
+          <li><a href="#services">Logo &amp; Branding</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <div class="footer-contact-list">
+          <div class="footer-ci">
+            <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            <a href="tel:+254723923518">+254 723 923518</a>
+          </div>
+          <div class="footer-ci">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            <a href="mailto:info@imperialsolutions.digital">info@imperialsolutions.digital</a>
+          </div>
+          <div class="footer-ci">
+            <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
+            Westlands, Nairobi, Kenya
+          </div>
+          <div class="footer-ci">
+            <svg viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            <a href="https://web.facebook.com/imperialsolution.net" target="_blank" rel="noopener">facebook.com/imperialsolution.net</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p class="footer-copy">
+          © 2026 <a href="#">Imperial Solutions Digital</a>. Westlands, Nairobi, Kenya. All rights reserved.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#home">Privacy Policy</a>
+          <a href="#home">Terms of Service</a>
+          <a href="#home">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
